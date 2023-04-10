@@ -20,7 +20,7 @@ class Sender implements Runnable {
 			this.sc = sc;
 			pw = new PrintWriter(so.getOutputStream());
 			
-		} catch (IOException e) {
+		} catch (IOException e) {	
 			e.printStackTrace();
 		}
 	}
