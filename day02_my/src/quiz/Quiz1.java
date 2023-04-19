@@ -16,7 +16,7 @@ public class Quiz1 {
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.print("a 입력 : ");
-		int a = Integer.parseInt(sc.nextLine());
+		int a = Integer.parseInt(sc.nextLine());		// sc.nextLine은 String 타입으로 받아지기에 Integer.parseInt로 Integer타입으로 변환
 		System.out.print("b 입력 : ");
 		int b = Integer.parseInt(sc.nextLine());
 		
