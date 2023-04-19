@@ -28,8 +28,8 @@ public class Quiz2 {
 		System.out.print("이름 입력 >> ");
 		name = sc.nextLine();
 		
-		System.out.print("수학 점수 입력 >> ");
-		mat = Integer.parseInt(sc.nextLine());
+		System.out.print("수학 점수 입력 >> ");	
+		mat = Integer.parseInt(sc.nextLine());	// sc.nextLine은 String 타입으로 받아지기에 Integer.parseInt로 Integer타입으로 변환
 		
 		System.out.print("국어 점수 입력 >> ");
 		kor = Integer.parseInt(sc.nextLine());
@@ -40,7 +40,7 @@ public class Quiz2 {
 		sc.close();
 		
 		total = mat + kor + eng;
-		avg = total / 3.0;
+		avg = total / 3.0;			// 3.0(double)타입으로 나누어야 나머지도 나옴
 		isPass = avg >= 60;
 		System.out.printf("%s님 (합계 : %d, 평균 : %.2f)\n",name, total, avg);
 		System.out.println("합격 여부 : " +isPass);
