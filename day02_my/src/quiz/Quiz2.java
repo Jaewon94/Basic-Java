@@ -40,7 +40,7 @@ public class Quiz2 {
 		sc.close();
 		
 		total = mat + kor + eng;
-		avg = total / 3.0;			// 3.0(double)타입으로 나누어야 나머지도 나옴
+		avg = total / 3.0;			// double(3.0)타입으로 나누어야 나머지도 나옴
 		isPass = avg >= 60;
 		System.out.printf("%s님 (합계 : %d, 평균 : %.2f)\n",name, total, avg);
 		System.out.println("합격 여부 : " +isPass);
